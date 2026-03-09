@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/appointment-booking/static/css/main.0f138111.css",
-    "main.js": "/appointment-booking/static/js/main.b95b5d60.js",
+    "main.css": "/appointment-booking/static/css/main.87c1b457.css",
+    "main.js": "/appointment-booking/static/js/main.f7dc1569.js",
+    "static/media/doctor.png": "/appointment-booking/static/media/doctor.ee4d21935cd33d53d414.png",
     "index.html": "/appointment-booking/index.html",
-    "main.0f138111.css.map": "/appointment-booking/static/css/main.0f138111.css.map",
-    "main.b95b5d60.js.map": "/appointment-booking/static/js/main.b95b5d60.js.map"
+    "main.87c1b457.css.map": "/appointment-booking/static/css/main.87c1b457.css.map",
+    "main.f7dc1569.js.map": "/appointment-booking/static/js/main.f7dc1569.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f138111.css",
-    "static/js/main.b95b5d60.js"
+    "static/css/main.87c1b457.css",
+    "static/js/main.f7dc1569.js"
   ]
 }
