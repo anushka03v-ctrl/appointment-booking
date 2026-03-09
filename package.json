@@ -1,6 +1,6 @@
 {
   "name": "appointment-booking",
-  "url":"https://github.com/anushka03v-ctrl/appointment-booking/",
+  "url": "https://github.com/anushka03v-ctrl/appointment-booking/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "npm start"
+  "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -38,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
