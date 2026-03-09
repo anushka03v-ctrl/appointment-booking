@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import doctors from "./data";
 import DoctorCard from "./components/DoctorCard";
 import BookingForm from "./components/BookingForm";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [selectedDoctor, setSelectedDoctor] = useState(null);
@@ -9,7 +10,8 @@ function App() {
   return (
     <div className="container">
       <h1>Online Doctor Appointment</h1>
-
+    <Navbar/>
+    <br></br>
       <div className="doctor-list">
         {doctors.map((doc) => (
           <DoctorCard
