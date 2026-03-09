@@ -2,19 +2,16 @@ import { useState } from "react";
 
 function BookingForm({ doctor }) {
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
+  const today = new Date().toISOString().split("T")[0];
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    alert(
-      `Appointment Confirmed ✅
-Doctor: ${doctor.name}
-Patient: ${name}
-Date: ${date}
-Time: ${time}`
-    );
+    alert("Your appointment is booked.");
   };
 
   return (
@@ -29,9 +26,23 @@ Time: ${time}`
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
-
+        <input
+          type="email"
+          placeholder="Email"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
+          type="tel"
+          placeholder="Phone Number"
+          required
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+        />
         <input
           type="date"
+          min={today}
           required
           value={date}
           onChange={(e) => setDate(e.target.value)}

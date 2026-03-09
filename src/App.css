@@ -61,3 +61,40 @@ select {
   padding: 8px;
   margin-bottom: 10px;
 }
+.light-theme{
+  background:#f8fafc;
+  color:#111;
+}
+.dark-theme{
+  background:#020617;
+  color:white;
+}
+.content{
+  padding:40px;
+  text-align:center;
+}
+.dark-theme .card{
+  background:#1e293b;
+  color:white;
+}
+
+.dark-theme .card p,
+.dark-theme .card h2{
+  color:white;
+}
+.dark-theme .form{
+  background:#1e293b;
+  color:white;
+}
+.dark-theme input,
+.dark-theme select{
+  background:#0f172a;
+  color:white;
+  border:1px solid #334155;
+}
+.dark-theme input::placeholder{
+  color:#cbd5f5;
+}
+body, .card, .form, input, select{
+  transition: all 0.3s ease;
+}

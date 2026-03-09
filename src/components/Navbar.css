@@ -1,0 +1,163 @@
+:root{
+    --primary-color: #28bf96;
+    --primary-color-dark: #209677;
+    --text-dark: #111827;
+    --text-light: #6b7280;
+    --white: #ffffff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.register-btn{
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.register-btn:hover{
+    background-color: var(--primary-color-dark);
+}
+body{
+    font-family: sans-serif;
+}
+.navbar{
+    max-width: 1200px;
+    margin: auto;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+nav{
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.logo{
+  font-size: 1.5rem;
+  font-weight:bold;
+  color: var(--primary-color)
+}
+
+.nav-links{
+    list-style: none ;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color: var(--text-light);
+  cursor: pointer;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#38bdf8;
+}
+
+.theme-btn{
+  padding:8px 15px;
+  border:none;
+  border-radius:20px;
+  background:#38bdf8;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.theme-btn:hover{
+  background:#0284c7;
+}
+@media (max-width:1080px){
+
+  nav{
+    padding:1.5rem;
+  }
+
+  .nav-links{
+    gap:1.5rem;
+  }
+
+  .logo{
+    font-size:1.4rem;
+  }
+
+}
+@media (max-width:760px){
+
+  .menu-btn{
+    display:block;
+    font-size:1.8rem;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:var(--white);
+    flex-direction:column;
+    align-items:center;
+    gap:1.5rem;
+    padding:1.5rem 0;
+    display:none;
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+  .register-btn{
+    display:none;
+  }
+
+}
+@media (max-width:380px){
+
+  nav{
+    padding:1rem;
+  }
+
+  .logo{
+    font-size:1.2rem;
+  }
+
+  .menu-btn{
+    font-size:1.6rem;
+  }
+
+  .nav-links a{
+    font-size:0.95rem;
+  }
+
+}
+@media (max-width:320px){
+
+  nav{
+    padding:0.8rem;
+  }
+
+  .logo{
+    font-size:1rem;
+  }
+
+  .nav-links{
+    gap:1rem;
+  }
+
+  .nav-links a{
+    font-size:0.85rem;
+  }
+
+}
