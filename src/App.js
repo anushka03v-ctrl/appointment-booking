@@ -12,6 +12,7 @@ function App() {
       <h1>Online Doctor Appointment</h1>
     <Navbar/>
     <br></br>
+    <br/>
       <div className="doctor-list">
         {doctors.map((doc) => (
           <DoctorCard
